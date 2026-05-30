@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://racines-namur.be/sitemap.xml
+
+# Ne pas indexer le brief client
+Disallow: /client-data.json

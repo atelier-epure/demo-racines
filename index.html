@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Racines — Restaurant gastronomique végétal à Namur</title>
+  <meta name="description" content="Restaurant gastronomique végétal à Namur. Cuisine de saison, produits locaux wallons, 28 couverts. Réservation en ligne sur TheFork.">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Racines — Gastronomique végétal, Namur">
+  <meta property="og:description" content="Restaurant gastronomique végétal à Namur. Cuisine de saison, produits locaux wallons, 28 couverts.">
+  <meta property="og:image" content="https://racines-namur.be/assets/photos/hero.jpg">
+  <meta property="og:url" content="https://racines-namur.be/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_BE">
+
+  <!-- Multilingue hreflang -->
+  <link rel="alternate" hreflang="fr" href="https://racines-namur.be/" />
+  <link rel="alternate" hreflang="en" href="https://racines-namur.be/en.html" />
+  <link rel="alternate" hreflang="nl" href="https://racines-namur.be/nl.html" />
+  <link rel="alternate" hreflang="x-default" href="https://racines-namur.be/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- AOS — version figée -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css?v=3">
+
+  <!-- Flux RSS du Journal -->
+  <link rel="alternate" type="application/rss+xml" title="Racines — Journal" href="feed.xml">
+
+  <!-- Schema.org Restaurant (Premium — enrichi) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Racines",
+    "inLanguage": "fr",
+    "image": "https://racines-namur.be/assets/photos/hero.jpg",
+    "description": "Restaurant gastronomique végétal à Namur. Cuisine de saison, produits locaux wallons dans un rayon de 80 km.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rue de Fer 14",
+      "postalCode": "5000",
+      "addressLocality": "Namur",
+      "addressCountry": "BE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.4669,
+      "longitude": 4.8674
+    },
+    "telephone": "+32 81 22 34 56",
+    "email": "contact@racines-namur.be",
+    "servesCuisine": "Gastronomique végétal",
+    "priceRange": "€€€",
+    "url": "https://racines-namur.be",
+    "menu": "https://racines-namur.be/#menu",
+    "acceptsReservations": true,
+    "hasMap": "https://maps.app.goo.gl/racines-namur",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday"], "opens": "19:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "19:00", "closes": "22:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "19:00", "closes": "22:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "14:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <a href="#" class="nav-logo-text" aria-label="Racines — accueil">Racines</a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Histoire</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#blog">Journal</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <ul class="lang-switcher" role="list" aria-label="Langue">
+      <li><a href="index.html" hreflang="fr" class="active" aria-current="true">FR</a></li>
+      <li><a href="en.html" hreflang="en">EN</a></li>
+      <li><a href="nl.html" hreflang="nl">NL</a></li>
+    </ul>
+
+    <a href="#reservation" class="nav-cta">Réserver</a>
+
+    <button class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav-mobile" id="nav-mobile" hidden role="dialog" aria-label="Menu mobile">
+    <button class="nav-close" id="nav-close" aria-label="Fermer le menu">×</button>
+    <ul class="nav-mobile-links" role="list">
+      <li><a href="#about">Histoire</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#blog">Journal</a></li>
+      <li><a href="#reservation">Réserver</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <ul class="lang-mobile" role="list" aria-label="Langue">
+      <li><a href="index.html" hreflang="fr">FR</a></li>
+      <li><a href="en.html" hreflang="en">EN</a></li>
+      <li><a href="nl.html" hreflang="nl">NL</a></li>
+    </ul>
+  </div>
+
+  <!-- ============================================================
+       HERO — full-bleed, titre italique bas-gauche
+  ============================================================ -->
+  <section class="hero-full" aria-label="Accueil">
+    <picture>
+      <img src="assets/photos/hero.jpg"
+           alt="Salle de Racines — pierres apparentes, bois brut, cuisine ouverte"
+           class="hero-image"
+           loading="eager"
+           fetchpriority="high">
+    </picture>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Gastronomique végétal &middot; Namur &middot; depuis 2019</span>
+      <h1 class="hero-title">Racines</h1>
+      <p class="hero-slogan">Là où la terre rencontre la table.</p>
+      <a href="#reservation" class="hero-cta">Réserver une table</a>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">↓</div>
+  </section>
+
+  <!-- ============================================================
+       MARQUEE — producteurs wallons [brisure signature]
+  ============================================================ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <!-- Contenu dupliqué pour l'infini -->
+      <span class="marquee-item"><strong>Ferme Renard</strong> — Fernelmont</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item"><strong>Champignonnière des Fagnes</strong> — Dinant</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item"><strong>Fromagerie de Chevetogne</strong></span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item"><strong>Maraîchers de Gesves</strong> — légumes bio</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item"><strong>Vergers de Hesbaye</strong> — pommes &amp; poires</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item"><strong>Épeautre de la Ferme Lecomte</strong> — Gembloux</span>
+      <span class="marquee-sep">✦</span>
+      <!-- Duplicate pour le seamless loop -->
+      <span class="marquee-item"><strong>Ferme Renard</strong> — Fernelmont</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item"><strong>Champignonnière des Fagnes</strong> — Dinant</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item"><strong>Fromagerie de Chevetogne</strong></span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item"><strong>Maraîchers de Gesves</strong> — légumes bio</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item"><strong>Vergers de Hesbaye</strong> — pommes &amp; poires</span>
+      <span class="marquee-sep">✦</span>
+      <span class="marquee-item"><strong>Épeautre de la Ferme Lecomte</strong> — Gembloux</span>
+      <span class="marquee-sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       À PROPOS — grid 1/3 sidebar + 2/3 body [asymétrie structurelle]
+  ============================================================ -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Sidebar 1/3 — sticky -->
+        <aside class="about-sidebar" data-aos="fade-right" data-aos-duration="1200">
+          <span class="section-label">Notre histoire</span>
+          <h2 class="section-title reveal-words">Une cuisine qui écoute la terre.</h2>
+          <div class="about-year" aria-label="Fondé en 2019">2019</div>
+        </aside>
+
+        <!-- Corps 2/3 -->
+        <div class="about-body" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
+          <p>Racines est né en 2019 de la rencontre entre deux passions : la gastronomie belge et le monde végétal. À l'origine du projet, le chef Julien Marchal, formé dans plusieurs maisons étoilées, a choisi de quitter les cuisines de la capitale pour s'installer à Namur et renouer avec les producteurs locaux de la région wallonne.</p>
+          <p>Ici, le végétal n'est pas une contrainte — c'est le point de départ. Chaque plat est construit autour d'un légume, d'un champignon ou d'une plante sauvage de saison, travaillés avec les techniques de la haute gastronomie : fermentations, cuissons lentes, émulsions. La carte change entièrement toutes les six semaines, dictée par les récoltes des fermes partenaires dans un rayon de 80 km.</p>
+          <p>La salle de Racines, installée dans une ancienne maison de maître du centre de Namur, accueille 28 couverts dans un décor sobre et chaleureux — pierres apparentes, bois brut, lumière tamisée. Une cuisine ouverte permet aux convives d'observer le travail en temps réel. L'expérience se veut immersive, silencieuse et sincère.</p>
+
+          <!-- Photo débordante hors du conteneur -->
+          <div class="about-photo">
+            <picture class="img-with-fallback">
+              <img src="assets/photos/equipe-1.jpg"
+                   alt="Le chef Julien Marchal en cuisine ouverte chez Racines"
+                   loading="lazy">
+            </picture>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHIFFRES
+  ============================================================ -->
+  <section class="chiffres" data-aos="fade-up" data-aos-duration="1200">
+    <div class="container">
+      <div class="chiffres-grid">
+        <div class="chiffre-item">
+          <span class="chiffre-num counter" data-target="2019" data-duration="2000">2019</span>
+          <span class="chiffre-label">Fondé en</span>
+        </div>
+        <div class="chiffre-item">
+          <span class="chiffre-num counter" data-target="28" data-duration="1400">28</span>
+          <span class="chiffre-label">Couverts</span>
+        </div>
+        <div class="chiffre-item">
+          <span class="chiffre-num counter" data-target="6" data-suffix=" sem." data-duration="1200">6 sem.</span>
+          <span class="chiffre-label">Renouvellement de la carte</span>
+        </div>
+        <div class="chiffre-item">
+          <span class="chiffre-num counter" data-target="80" data-suffix=" km" data-duration="1600">80 km</span>
+          <span class="chiffre-label">Rayon d'approvisionnement</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TERROIR — diagramme radial SVG [brisure signature]
+  ============================================================ -->
+  <section class="terroir" data-aos="fade-up" data-aos-duration="1400">
+    <div class="container">
+      <span class="section-label">Nos producteurs</span>
+      <h2 class="section-title section-title--center reveal-words">Le terroir wallon à 80 km.</h2>
+      <p class="terroir-subtitle">Chaque assiette raconte une géographie.</p>
+
+      <div class="terroir-diagram">
+        <svg viewBox="0 0 560 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carte des producteurs partenaires de Racines autour de Namur">
+          <defs>
+            <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#f0ece2" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#fafaf7" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Cercles concentriques distance -->
+          <circle cx="280" cy="260" r="60"  fill="none" stroke="#e8e4dc" stroke-width="1" stroke-dasharray="4 6"/>
+          <circle cx="280" cy="260" r="120" fill="none" stroke="#e8e4dc" stroke-width="1" stroke-dasharray="4 6"/>
+          <circle cx="280" cy="260" r="180" fill="none" stroke="#e8e4dc" stroke-width="1" stroke-dasharray="4 6"/>
+
+          <!-- Labels distance -->
+          <text x="342" y="258" font-family="Manrope, sans-serif" font-size="9" fill="#8b6f47" opacity="0.55" letter-spacing="0.08em">20 km</text>
+          <text x="402" y="258" font-family="Manrope, sans-serif" font-size="9" fill="#8b6f47" opacity="0.55" letter-spacing="0.08em">50 km</text>
+          <text x="462" y="258" font-family="Manrope, sans-serif" font-size="9" fill="#8b6f47" opacity="0.55" letter-spacing="0.08em">80 km</text>
+
+          <!-- Lignes vers les producteurs -->
+          <!-- Ferme Renard — Fernelmont (NE, ~20 km) -->
+          <line x1="280" y1="260" x2="338" y2="192" stroke="#8b6f47" stroke-width="0.8" stroke-opacity="0.5"/>
+          <!-- Champignonnière des Fagnes — Dinant (S, ~30 km) -->
+          <line x1="280" y1="260" x2="248" y2="380" stroke="#8b6f47" stroke-width="0.8" stroke-opacity="0.5"/>
+          <!-- Fromagerie de Chevetogne (W, ~55 km) -->
+          <line x1="280" y1="260" x2="135" y2="280" stroke="#8b6f47" stroke-width="0.8" stroke-opacity="0.5"/>
+          <!-- Maraîchers de Gesves (N, ~22 km) -->
+          <line x1="280" y1="260" x2="295" y2="152" stroke="#8b6f47" stroke-width="0.8" stroke-opacity="0.5"/>
+          <!-- Vergers de Hesbaye (NW, ~60 km) -->
+          <line x1="280" y1="260" x2="152" y2="168" stroke="#8b6f47" stroke-width="0.8" stroke-opacity="0.5"/>
+          <!-- Ferme Lecomte — Gembloux (E, ~20 km) -->
+          <line x1="280" y1="260" x2="352" y2="285" stroke="#8b6f47" stroke-width="0.8" stroke-opacity="0.5"/>
+
+          <!-- Namur — centre -->
+          <circle cx="280" cy="260" r="10" fill="#8b6f47" opacity="0.9"/>
+          <circle cx="280" cy="260" r="5"  fill="#fafaf7"/>
+          <text x="280" y="240" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="14" fill="#1a1a1a" opacity="0.85">Namur</text>
+
+          <!-- Producteur 1 — Ferme Renard -->
+          <circle cx="338" cy="192" r="6" fill="#8b6f47" opacity="0.55"/>
+          <circle cx="338" cy="192" r="3" fill="#fafaf7"/>
+          <text x="346" y="185" font-family="Cormorant Garamond, serif" font-style="italic" font-size="11.5" fill="#1a1a1a" opacity="0.8">Ferme Renard</text>
+          <text x="346" y="198" font-family="Manrope, sans-serif" font-size="8.5" fill="#8b6f47" opacity="0.65" letter-spacing="0.06em">Légumes · Fernelmont</text>
+
+          <!-- Producteur 2 — Champignonnière -->
+          <circle cx="248" cy="380" r="6" fill="#8b6f47" opacity="0.55"/>
+          <circle cx="248" cy="380" r="3" fill="#fafaf7"/>
+          <text x="140" y="378" font-family="Cormorant Garamond, serif" font-style="italic" font-size="11.5" fill="#1a1a1a" opacity="0.8">Champignonnière</text>
+          <text x="140" y="391" font-family="Manrope, sans-serif" font-size="8.5" fill="#8b6f47" opacity="0.65" letter-spacing="0.06em">Champignons · Dinant</text>
+
+          <!-- Producteur 3 — Fromagerie Chevetogne -->
+          <circle cx="135" cy="280" r="6" fill="#8b6f47" opacity="0.55"/>
+          <circle cx="135" cy="280" r="3" fill="#fafaf7"/>
+          <text x="28" y="275" font-family="Cormorant Garamond, serif" font-style="italic" font-size="11.5" fill="#1a1a1a" opacity="0.8">Fromagerie</text>
+          <text x="28" y="288" font-family="Manrope, sans-serif" font-size="8.5" fill="#8b6f47" opacity="0.65" letter-spacing="0.06em">Fromages · Chevetogne</text>
+
+          <!-- Producteur 4 — Maraîchers de Gesves -->
+          <circle cx="295" cy="152" r="6" fill="#8b6f47" opacity="0.55"/>
+          <circle cx="295" cy="152" r="3" fill="#fafaf7"/>
+          <text x="305" y="148" font-family="Cormorant Garamond, serif" font-style="italic" font-size="11.5" fill="#1a1a1a" opacity="0.8">Maraîchers de Gesves</text>
+          <text x="305" y="161" font-family="Manrope, sans-serif" font-size="8.5" fill="#8b6f47" opacity="0.65" letter-spacing="0.06em">Légumes bio</text>
+
+          <!-- Producteur 5 — Vergers de Hesbaye -->
+          <circle cx="152" cy="168" r="6" fill="#8b6f47" opacity="0.55"/>
+          <circle cx="152" cy="168" r="3" fill="#fafaf7"/>
+          <text x="12" y="163" font-family="Cormorant Garamond, serif" font-style="italic" font-size="11.5" fill="#1a1a1a" opacity="0.8">Vergers de Hesbaye</text>
+          <text x="12" y="176" font-family="Manrope, sans-serif" font-size="8.5" fill="#8b6f47" opacity="0.65" letter-spacing="0.06em">Pommes &amp; Poires</text>
+
+          <!-- Producteur 6 — Ferme Lecomte -->
+          <circle cx="352" cy="285" r="6" fill="#8b6f47" opacity="0.55"/>
+          <circle cx="352" cy="285" r="3" fill="#fafaf7"/>
+          <text x="362" y="282" font-family="Cormorant Garamond, serif" font-style="italic" font-size="11.5" fill="#1a1a1a" opacity="0.8">Ferme Lecomte</text>
+          <text x="362" y="295" font-family="Manrope, sans-serif" font-size="8.5" fill="#8b6f47" opacity="0.65" letter-spacing="0.06em">Épeautre · Gembloux</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MENU INTERACTIF (Premium)
+  ============================================================ -->
+  <section id="menu" class="menu-interactif">
+    <div class="container">
+      <span class="section-label">Notre carte</span>
+      <h2 class="section-title section-title--center reveal-words">La saison dans l'assiette.</h2>
+
+      <!-- Vedettes -->
+      <p class="vedettes-titre">Plats signatures</p>
+      <div class="vedettes-grid">
+
+        <article class="vedette-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">
+          <picture class="img-with-fallback">
+            <img src="assets/photos/vedette-celeri.jpg" alt="Céleri-rave en croûte d'herbes sauvages" loading="lazy">
+          </picture>
+          <div class="vedette-info">
+            <h3>Céleri-rave en croûte</h3>
+            <p>Croûte d'herbes sauvages, jus de champignons réduit, purée de panais</p>
+            <span class="vedette-prix">32 €</span>
+          </div>
+        </article>
+
+        <article class="vedette-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="80">
+          <picture class="img-with-fallback">
+            <img src="assets/photos/vedette-betterave.jpg" alt="Betterave rôtie, crème de chèvre et huile de lavande" loading="lazy">
+          </picture>
+          <div class="vedette-info">
+            <h3>Betterave &amp; lavande</h3>
+            <p>Betterave rôtie, crème de chèvre frais, huile de lavande, noisettes</p>
+            <span class="vedette-prix">16 €</span>
+          </div>
+        </article>
+
+        <article class="vedette-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="160">
+          <picture class="img-with-fallback">
+            <img src="assets/photos/vedette-risotto.jpg" alt="Risotto d'épeautre de Wallonie aux cèpes sauvages" loading="lazy">
+          </picture>
+          <div class="vedette-info">
+            <h3>Risotto d'épeautre</h3>
+            <p>Épeautre de Wallonie, cèpes sauvages, parmesan affiné 24 mois</p>
+            <span class="vedette-prix">28 €</span>
+          </div>
+        </article>
+
+        <article class="vedette-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="240">
+          <picture class="img-with-fallback">
+            <img src="assets/photos/vedette-chocolat.jpg" alt="Ganache chocolat 72% intense, glace au lait d'avoine" loading="lazy">
+          </picture>
+          <div class="vedette-info">
+            <h3>Chocolat 72% &amp; sel</h3>
+            <p>Ganache intense, glace au lait d'avoine, fleur de sel de Guérande</p>
+            <span class="vedette-prix">13 €</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Filtres catégories -->
+      <nav class="menu-cats" aria-label="Catégories du menu">
+        <button class="menu-cat-btn actif" data-cat="entrees">Entrées</button>
+        <button class="menu-cat-btn" data-cat="plats">Plats</button>
+        <button class="menu-cat-btn" data-cat="fromages">Fromages</button>
+        <button class="menu-cat-btn" data-cat="desserts">Desserts</button>
+      </nav>
+
+      <!-- Sections menu avec numérotation romaine -->
+      <div class="menu-sections" id="menu-sections">
+
+        <div class="menu-section-block" data-section="entrees" data-aos="fade-up" data-aos-duration="1200">
+          <div class="menu-section-head">
+            <span class="menu-roman" aria-hidden="true">I.</span>
+            <h3>Pour commencer</h3>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item__nom">Betterave &amp; lavande</span>
+            <span class="menu-item__dots"></span>
+            <span class="menu-item__prix">16 €</span>
+            <span class="menu-item__desc">Betterave rôtie, crème de chèvre frais, huile de lavande, noisettes torréfiées</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item__nom">Velouté de topinambour</span>
+            <span class="menu-item__dots"></span>
+            <span class="menu-item__prix">18 €</span>
+            <span class="menu-item__desc">Émulsion de topinambour fumé, truffe noire, chips de sarrasin</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item__nom">Tartare de champignons</span>
+            <span class="menu-item__dots"></span>
+            <span class="menu-item__prix">15 €</span>
+            <span class="menu-item__desc">Pleurotes &amp; shiitakés marinés, jaune d'œuf confit, pickles maison</span>
+          </div>
+        </div>
+
+        <div class="menu-section-block" data-section="plats" data-aos="fade-up" data-aos-duration="1200">
+          <div class="menu-section-head">
+            <span class="menu-roman" aria-hidden="true">II.</span>
+            <h3>Pour suivre</h3>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item__nom">Céleri-rave en croûte</span>
+            <span class="menu-item__dots"></span>
+            <span class="menu-item__prix">32 €</span>
+            <span class="menu-item__desc">Croûte d'herbes sauvages, jus de champignons réduit, purée de panais</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item__nom">Risotto d'épeautre</span>
+            <span class="menu-item__dots"></span>
+            <span class="menu-item__prix">28 €</span>
+            <span class="menu-item__desc">Épeautre de Wallonie, cèpes sauvages, parmesan affiné 24 mois</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item__nom">Courge &amp; miso</span>
+            <span class="menu-item__dots"></span>
+            <span class="menu-item__prix">29 €</span>
+            <span class="menu-item__desc">Courge butternut confite, sauce miso blanc, quinoa soufflé, coriandre fraîche</span>
+          </div>
+        </div>
+
+        <div class="menu-section-block" data-section="fromages" data-aos="fade-up" data-aos-duration="1200">
+          <div class="menu-section-head">
+            <span class="menu-roman" aria-hidden="true">III.</span>
+            <h3>Sélection wallonne</h3>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item__nom">Plateau affiné</span>
+            <span class="menu-item__dots"></span>
+            <span class="menu-item__prix">14 €</span>
+            <span class="menu-item__desc">3 fromages wallons sélectionnés, pain de campagne maison, confiture de figue</span>
+          </div>
+        </div>
+
+        <div class="menu-section-block" data-section="desserts" data-aos="fade-up" data-aos-duration="1200">
+          <div class="menu-section-head">
+            <span class="menu-roman" aria-hidden="true">IV.</span>
+            <h3>Pour finir</h3>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item__nom">Poire &amp; cardamome</span>
+            <span class="menu-item__dots"></span>
+            <span class="menu-item__prix">12 €</span>
+            <span class="menu-item__desc">Poire pochée, crème diplomate cardamome, tuile au sucre brûlé</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item__nom">Chocolat 72% &amp; sel</span>
+            <span class="menu-item__dots"></span>
+            <span class="menu-item__prix">13 €</span>
+            <span class="menu-item__desc">Ganache intense, glace au lait d'avoine, fleur de sel de Guérande</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item__nom">Sorbet saison</span>
+            <span class="menu-item__dots"></span>
+            <span class="menu-item__prix">9 €</span>
+            <span class="menu-item__desc">Sorbet au fruit du marché, herbes fraîches du jardin</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALERIE (Premium = filtres + voir plus + lightbox)
+  ============================================================ -->
+  <section id="galerie" class="galerie-section">
+    <div class="container">
+      <span class="section-label">Galerie</span>
+      <h2 class="section-title reveal-words">L'espace et l'assiette.</h2>
+
+      <div class="galerie-filtres" role="group" aria-label="Filtrer la galerie">
+        <button data-filtre="all" class="actif">Tout</button>
+        <button data-filtre="plats">Plats</button>
+        <button data-filtre="interieur">Intérieur</button>
+        <button data-filtre="equipe">Équipe</button>
+        <button data-filtre="evenements">Saisons</button>
+      </div>
+
+      <div class="galerie" id="galerie-grid" data-filter="all">
+        <!-- 5 photos visibles par défaut -->
+        <picture class="img-with-fallback" data-cat="plats">
+          <img src="assets/photos/plat-1.jpg" alt="Betterave rôtie, crème de chèvre et lavande" loading="lazy">
+        </picture>
+        <picture class="img-with-fallback" data-cat="plats">
+          <img src="assets/photos/plat-2.jpg" alt="Céleri-rave en croûte d'herbes sauvages" loading="lazy">
+        </picture>
+        <picture class="img-with-fallback" data-cat="interieur">
+          <img src="assets/photos/interieur-1.jpg" alt="Salle principale — pierres apparentes et bois brut" loading="lazy">
+        </picture>
+        <picture class="img-with-fallback" data-cat="plats">
+          <img src="assets/photos/plat-3.jpg" alt="Risotto d'épeautre aux cèpes sauvages" loading="lazy">
+        </picture>
+        <picture class="img-with-fallback" data-cat="interieur">
+          <img src="assets/photos/interieur-2.jpg" alt="La cuisine ouverte de Racines" loading="lazy">
+        </picture>
+
+        <!-- Photo 6 : trigger "Voir plus" -->
+        <picture class="img-with-fallback see-more-trigger" data-cat="equipe" data-see-more="Voir plus">
+          <img src="assets/photos/equipe-1.jpg" alt="Le chef Julien Marchal en cuisine" loading="lazy">
+        </picture>
+
+        <!-- Photos extras (7-11) — cachées jusqu'au clic -->
+        <picture class="img-with-fallback galerie-extra" data-cat="plats">
+          <img src="assets/photos/plat-4.jpg" alt="Courge butternut confite au miso blanc" loading="lazy">
+        </picture>
+        <picture class="img-with-fallback galerie-extra" data-cat="interieur">
+          <img src="assets/photos/interieur-3.jpg" alt="Lumière tamisée, tables en bois brut" loading="lazy">
+        </picture>
+        <picture class="img-with-fallback galerie-extra" data-cat="plats">
+          <img src="assets/photos/dessert-1.jpg" alt="Poire pochée et crème cardamome" loading="lazy">
+        </picture>
+        <picture class="img-with-fallback galerie-extra" data-cat="evenements">
+          <img src="assets/photos/producteurs-1.jpg" alt="Visite chez nos producteurs wallons" loading="lazy">
+        </picture>
+        <picture class="img-with-fallback galerie-extra" data-cat="equipe">
+          <img src="assets/photos/equipe-2.jpg" alt="L'équipe de Racines en salle" loading="lazy">
+        </picture>
+      </div>
+
+      <div class="galerie-less-wrap">
+        <button type="button" class="galerie-less" aria-label="Réduire la galerie">Voir moins</button>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo agrandie">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Fermer">×</button>
+      <button class="lightbox-prev" id="lightbox-prev" aria-label="Photo précédente">‹</button>
+      <img src="" alt="" class="lightbox-img" id="lightbox-img">
+      <button class="lightbox-next" id="lightbox-next" aria-label="Photo suivante">›</button>
+      <span class="lightbox-caption" id="lightbox-caption"></span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RÉSERVATION — fond fixe parallax
+  ============================================================ -->
+  <section id="reservation" class="reservation">
+    <div class="container">
+      <span class="section-label">Réservation</span>
+      <h2 class="section-title reveal-words">Réserver une table.</h2>
+      <p class="reservation-sub">28 couverts, service intime.<br>Nous vous recommandons de réserver au moins 3 jours à l'avance.</p>
+
+      <div class="reservation-infos">
+        <div class="res-info">
+          Service du soir
+          <strong>Mercredi → Vendredi</strong>
+        </div>
+        <div class="res-info">
+          Déjeuner &amp; dîner
+          <strong>Samedi</strong>
+        </div>
+        <div class="res-info">
+          Déjeuner uniquement
+          <strong>Dimanche</strong>
+        </div>
+      </div>
+
+      <a href="https://www.thefork.be/restaurant/racines-namur-placeholder"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn-res">
+        Réserver sur TheFork
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT + CARTE
+  ============================================================ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info" data-aos="fade-right" data-aos-duration="1200">
+          <span class="section-label">Nous trouver</span>
+          <h2 class="section-title">Au cœur de Namur.</h2>
+
+          <address>
+            <div class="contact-block">
+              <span class="contact-block-label">Adresse</span>
+              <p>Rue de Fer 14<br>5000 Namur, Belgique</p>
+            </div>
+
+            <div class="contact-block">
+              <span class="contact-block-label">Contact</span>
+              <p>
+                <a href="tel:+3281223456">+32 81 22 34 56</a><br>
+                <a href="mailto:contact@racines-namur.be">contact@racines-namur.be</a>
+              </p>
+            </div>
+
+            <div class="contact-block">
+              <span class="contact-block-label">Horaires</span>
+              <dl class="horaires">
+                <dt>Lundi</dt>   <dd class="ferme">Fermé</dd>
+                <dt>Mardi</dt>   <dd class="ferme">Fermé</dd>
+                <dt>Mercredi</dt><dd>19:00 — 22:00</dd>
+                <dt>Jeudi</dt>   <dd>19:00 — 22:00</dd>
+                <dt>Vendredi</dt><dd>19:00 — 22:30</dd>
+                <dt>Samedi</dt>  <dd>12:00 — 14:00 &amp; 19:00 — 22:30</dd>
+                <dt>Dimanche</dt><dd>12:00 — 14:00</dd>
+              </dl>
+            </div>
+          </address>
+
+          <div class="contact-socials">
+            <a href="https://instagram.com/racines.namur" target="_blank" rel="noopener" aria-label="Instagram de Racines">Instagram</a>
+            <a href="https://facebook.com/racinesnamur" target="_blank" rel="noopener" aria-label="Facebook de Racines">Facebook</a>
+          </div>
+        </div>
+
+        <div class="contact-map" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">
+          <iframe
+            src="https://www.google.com/maps?q=Rue+de+Fer+14,+5000+Namur,+Belgique&output=embed"
+            width="100%"
+            height="460"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localisation de Racines — Rue de Fer 14, Namur">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BLOG — aperçu (Premium)
+  ============================================================ -->
+  <section id="blog" class="blog-apercu" data-aos="fade-up" data-aos-duration="1200">
+    <div class="container">
+      <span class="section-label">Journal</span>
+      <h2 class="section-title reveal-words">Histoires du terroir.</h2>
+
+      <div class="blog-grid">
+        <article class="blog-card" style="background-image: linear-gradient(to top, rgba(15,12,9,0.92) 0%, rgba(15,12,9,0.55) 50%, rgba(15,12,9,0.35) 100%), url('assets/photos/article-celeri.jpg');">
+          <span class="blog-card-num">01</span>
+          <h3>Pourquoi le céleri-rave est le roi de l'hiver wallon</h3>
+          <a href="blog/celeri-rave-hiver-wallon.html" class="lire">Lire l'article</a>
+        </article>
+        <article class="blog-card" style="background-image: linear-gradient(to top, rgba(15,12,9,0.94) 0%, rgba(15,12,9,0.6) 50%, rgba(15,12,9,0.4) 100%), url('assets/photos/article-ferme.jpg');">
+          <span class="blog-card-num">02</span>
+          <h3>Nos producteurs : la ferme Renard à Fernelmont</h3>
+          <a href="blog/producteurs-ferme-renard-fernelmont.html" class="lire">Lire l'article</a>
+        </article>
+        <article class="blog-card" style="background-image: linear-gradient(to top, rgba(15,12,9,0.92) 0%, rgba(15,12,9,0.55) 50%, rgba(15,12,9,0.35) 100%), url('assets/photos/article-vins.jpg');">
+          <span class="blog-card-num">03</span>
+          <h3>Accord légumes &amp; vins naturels : notre sélection de printemps</h3>
+          <a href="blog/accord-legumes-vins-naturels-printemps.html" class="lire">Lire l'article</a>
+        </article>
+      </div>
+      <div class="blog-all-wrap">
+        <a href="blog/" class="blog-all-link">Voir tout le journal →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-brand-name">Racines</span>
+          <p>Là où la terre rencontre la table.<br>Gastronomique végétal — Namur — depuis 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">Histoire</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#reservation">Réserver</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#blog">Journal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Horaires</h4>
+          <p>
+            Lun–Mar : Fermé<br>
+            Mer–Jeu : 19:00–22:00<br>
+            Ven : 19:00–22:30<br>
+            Sam : 12:00–14:00 &amp; 19:00–22:30<br>
+            Dim : 12:00–14:00
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            <p>
+              Rue de Fer 14<br>
+              5000 Namur<br>
+              <a href="tel:+3281223456">+32 81 22 34 56</a><br>
+              <a href="mailto:contact@racines-namur.be">contact@racines-namur.be</a>
+            </p>
+          </address>
+          <br>
+          <h4>Suivez-nous</h4>
+          <ul>
+            <li><a href="https://instagram.com/racines.namur" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://facebook.com/racinesnamur" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Racines. Tous droits réservés.</span>
+        <span>
+          <a href="en.html">EN</a> &nbsp;·&nbsp;
+          <a href="nl.html">NL</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js?v=3"></script>
+</body>
+</html>

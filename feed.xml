@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Racines — Journal</title>
+    <link>https://racines-namur.be/#blog</link>
+    <atom:link href="https://racines-namur.be/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Histoires du terroir, producteurs wallons et cuisine de saison — le journal du restaurant gastronomique végétal Racines, à Namur.</description>
+    <language>fr-BE</language>
+    <lastBuildDate>Thu, 29 May 2026 00:00:00 +0200</lastBuildDate>
+
+    <item>
+      <title>Pourquoi le céleri-rave est le roi de l'hiver wallon</title>
+      <link>https://racines-namur.be/blog/celeri-rave-hiver-wallon.html</link>
+      <guid>https://racines-namur.be/blog/celeri-rave-hiver-wallon.html</guid>
+      <pubDate>Thu, 29 May 2026 00:00:00 +0200</pubDate>
+      <description>Le céleri-rave, légume oublié et star de notre carte d'hiver : portrait d'une racine humble devenue plat signature.</description>
+    </item>
+
+    <item>
+      <title>Nos producteurs : la ferme Renard à Fernelmont</title>
+      <link>https://racines-namur.be/blog/producteurs-ferme-renard-fernelmont.html</link>
+      <guid>https://racines-namur.be/blog/producteurs-ferme-renard-fernelmont.html</guid>
+      <pubDate>Thu, 15 May 2026 00:00:00 +0200</pubDate>
+      <description>Rencontre avec la ferme Renard, à 20 km de Namur, qui fournit nos légumes de saison toute l'année.</description>
+    </item>
+
+    <item>
+      <title>Accord légumes &amp; vins naturels : notre sélection de printemps</title>
+      <link>https://racines-namur.be/blog/accord-legumes-vins-naturels-printemps.html</link>
+      <guid>https://racines-namur.be/blog/accord-legumes-vins-naturels-printemps.html</guid>
+      <pubDate>Thu, 01 May 2026 00:00:00 +0200</pubDate>
+      <description>Comment marier nos plats végétaux avec des vins naturels : la sélection de printemps de Racines.</description>
+    </item>
+
+  </channel>
+</rss>

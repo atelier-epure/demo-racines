@@ -1,0 +1,9 @@
+# Brief client — ne jamais publier
+client-data.json
+
+# Config locale Claude
+.claude/
+
+# macOS
+.DS_Store
+**/.DS_Store

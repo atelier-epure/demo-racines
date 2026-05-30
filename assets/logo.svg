@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <!-- Wordmark Racines en Cormorant Garamond style -->
+  <text
+    x="4"
+    y="38"
+    font-family="'Cormorant Garamond', Georgia, serif"
+    font-size="36"
+    font-weight="300"
+    font-style="italic"
+    letter-spacing="4"
+    fill="currentColor"
+  >Racines</text>
+  <!-- Ligne fine en dessous — bronze -->
+  <line x1="4" y1="44" x2="196" y2="44" stroke="#8b6f47" stroke-width="0.8" stroke-opacity="0.6"/>
+</svg>
