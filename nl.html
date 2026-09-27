@@ -18,7 +18,7 @@
   <link rel="apple-touch-icon" href="assets/favicon.png?v=3">
   <link rel="stylesheet" href="assets/fonts/fonts.css?v=1">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <link rel="alternate" type="application/rss+xml" title="Racines — Journal" href="feed.xml">
 
   <!-- Schema.org Restaurant (localised NL) -->
@@ -536,7 +536,12 @@
           </div>
         </div>
         <div class="contact-map" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">
-          <iframe src="https://www.google.com/maps?q=Rue+de+Fer+14,+5000+Namur,+Belgique&output=embed" width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Locatie van Racines — Rue de Fer 14, Namen"></iframe>
+          <!-- Carte en « clic pour charger » : aucun appel à Google avant le clic (RGPD) — voir script.js § 13 -->
+          <div class="map-consent" data-map-src="https://www.google.com/maps?q=Rue+de+Fer+14,+5000+Namur,+Belgique&amp;output=embed" data-map-title="Locatie van Racines — Rue de Fer 14, Namen">
+            <p class="map-consent__adresse">Rue de Fer 14 · 5000 Namen</p>
+            <button type="button" class="map-consent__btn">Kaart tonen</button>
+            <p class="map-consent__note">Door de kaart te tonen, wordt Google Maps geladen, dat cookies kan plaatsen. <a href="mentions-legales.html">Meer info</a></p>
+          </div>
         </div>
       </div>
     </div>
@@ -609,7 +614,7 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 
 <!-- Bandeau demonstration — Atelier Epure -->
 <style>

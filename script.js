@@ -270,3 +270,17 @@ document.querySelectorAll('.galerie .img-with-fallback').forEach(pic => {
 
 /* ─── 12. MENU LIFT — CSS seul, pas de JS ───────────── */
 // (géré par CSS .menu-item:hover — voir styles.css)
+
+/* ─── 13. CARTE « CLIC POUR CHARGER » (RGPD) ───────────── */
+// L'iframe Google Maps n'est injectée qu'après un clic explicite :
+// aucun cookie ni appel à Google tant que le visiteur n'a rien demandé.
+document.querySelectorAll('.map-consent').forEach(box => {
+  box.querySelector('.map-consent__btn').addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = box.dataset.mapSrc;
+    iframe.title = box.dataset.mapTitle;
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.referrerPolicy = 'no-referrer-when-downgrade';
+    box.replaceWith(iframe);
+  });
+});
